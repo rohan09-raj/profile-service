@@ -1,9 +1,9 @@
 package com.example.MyProfileService.controller;
 
 import com.example.MyProfileService.model.Profile;
-import org.springframework.http.HttpHeaders;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,20 +14,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyProfileServiceController {
     @GetMapping("/health")
-    public ResponseEntity health() {
+    public ResponseEntity<String> health() {
         final String status = "status: UP";
-        return new ResponseEntity(status, HttpStatus.OK);
+        return new ResponseEntity<>(status, HttpStatus.OK);
     }
 
-    @PostMapping(value = "/verification", consumes = "application/json", produces = "application/json")
-    public ResponseEntity verification(@RequestBody String salt) {
+    @PostMapping(value = "/verification")
+    public ResponseEntity<String> verification(@RequestBody String salt) throws JSONException {
         final String chainCode = "123cn1mcad";
-//        System.out.println("Salt : " + salt);
-        return new ResponseEntity(BCrypt.hashpw(chainCode, salt), HttpStatus.OK);
+        JSONObject jsonObject = new JSONObject(salt);
+        System.out.println("Salt : " + salt);
+        System.out.println("Salt :" + jsonObject.getString("salt"));
+        return new ResponseEntity<>(BCrypt.hashpw(chainCode, jsonObject.getString("salt")), HttpStatus.OK);
     }
 
     @GetMapping("/profile")
-    public ResponseEntity profile() {
+    public ResponseEntity<Object> profile() {
         Profile profile = new Profile(
                 "Rohan Raj",
                 "Gupta",
@@ -42,8 +44,6 @@ public class MyProfileServiceController {
                 "_.rohan09._",
                 "https://lift-simulation-by-rohan.netlify.app/src/index.html"
         );
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_JSON);
-        return new ResponseEntity(profile, headers, HttpStatus.OK);
+        return new ResponseEntity<>(profile, HttpStatus.OK);
     }
 }
