@@ -47,5 +47,34 @@ mvn spring-boot:run
 ```
 
 ### Step 7:
-After you have started your JAVA application running, go to Postman
+After you have started your JAVA application running, go to Postman, ensure that you are logged in.
+On Home page, you will be able to find `Send Request` button as shown below. Click on it
+![image](https://user-images.githubusercontent.com/78433013/166111296-322fcaf3-3c3f-4cae-85cf-443f1ba66d79.png)
+
+After clicking, a new tab will appear something like below
+![image](https://user-images.githubusercontent.com/78433013/166111370-fa0edff7-bb72-4b19-acd5-dd573cb4fd33.png)
+There is a field called `Enter Request URL`. Copy and paste the below URL
+```
+http://localhost:8080/health
+```
+Then, click on `Send` button
+![image](https://user-images.githubusercontent.com/78433013/166111448-44d7a061-0d18-4786-9a4d-e8b3f30e8e07.png)
+
+You will be able to see a response body `status: UP`
+![image](https://user-images.githubusercontent.com/78433013/166111504-61195f9a-5ae3-41ce-b1d3-6a99a41a0744.png)
+
+Wohooo!!!! 🥳 🎉 🎉 Congratulations you have tested your first API.
+
+### Step 8:
+Now, further test the remaining two API's. Now we will be changing the Request URL to:
+```
+http://localhost:8080/profile
+```
+![image](https://user-images.githubusercontent.com/78433013/166112104-37ab209f-9f42-4b54-b680-0088f67d7ac5.png)
+
+Click on the `Send` button and you will get your own details that you have entered something in this format.
+
+![image](https://user-images.githubusercontent.com/78433013/166113586-713e1a76-efde-47d5-8426-372cf4a1ba7c.png)
+
+
 
