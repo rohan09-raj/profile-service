@@ -66,7 +66,7 @@ You will be able to see a response body `status: UP`
 Wohooo!!!! 🥳 🎉 🎉 Congratulations you have tested your first API.
 
 ### Step 8:
-Now, further test the remaining two API's. Now we will be changing the Request URL to:
+Now, further test the remaining one API i.e. `/profile`. Now we will be changing the Request URL to:
 ```
 http://localhost:8080/profile
 ```
@@ -77,4 +77,46 @@ Click on the `Send` button and you will get your own details that you have enter
 ![image](https://user-images.githubusercontent.com/78433013/166113586-713e1a76-efde-47d5-8426-372cf4a1ba7c.png)
 
 ### Step 9
+Great 🎉 🎉, you have tested your APIs successfully, now we need to host your service, so that you can verify your Real Dev Squad account.
+You can host your service on any dynamic hosting platforms. We will be using `Heroku` here, so make sure to create an account on Heroku.
+
+### Step 10
+Cool, now that you have created your account, and logged in you will see your Heroku account dashboard something like below.
+![image](https://user-images.githubusercontent.com/78433013/172591791-017ab48a-1f85-4b2b-9cd9-66da30f6ac1e.png)
+
+Click on `New` and you will see dropdown having two options i.e. `Create New App` and `Create New Pipeline`
+![image](https://user-images.githubusercontent.com/78433013/172592073-19a8a831-551b-49b8-a18e-7b3019ec424c.png)
+
+Click on `Create New App`
+
+### Step 11
+Now, you will be directed to a new page where you have to create your new heroku app
+![image](https://user-images.githubusercontent.com/78433013/172592488-920384c1-d144-462d-acf2-75c35cbebab5.png)
+
+Enter the valid app name as per your choice, make sure you have entered a name relevant to the app and available on Heroku.
+![image](https://user-images.githubusercontent.com/78433013/172592969-e4c810d5-8cf0-47e5-94a5-7fd442e523b8.png)
+
+Then click on `Create App`.
+Wohoo!! you have successfully created your Heroku app, now you have to deploy the code in your local to Heroku.
+
+### Step 12
+Now you will seeing your deploy section of the Heroku app as below.
+![image](https://user-images.githubusercontent.com/78433013/172593891-762a00e6-b78d-44f1-b560-480229903a31.png)
+
+In the middle of the page, you will be able to see various deployment methods like Heroku Git or GitHub etc.
+You can use either of them, mostly we use Heroku Git or GitHub one.
+
+If you select `Heroku Git`, there will be instructions given just below the options to execute in your Terminal/Command Line Interface
+
+Follow the instructions as per in the given order
+![image](https://user-images.githubusercontent.com/78433013/172601479-d89232d7-2273-4148-8c69-e70e7569f15c.png)
+
+After you have run this command `git push heroku master`
+Wait for few minutes or seconds to get the deployment done
+Awesome 🥳 🎉, your service is deployed and you can access your deployed service with the provided url by Heroku
+
+
+
+
+
 
