@@ -72,9 +72,9 @@ http://localhost:8080/profile
 ```
 ![image](https://user-images.githubusercontent.com/78433013/166112104-37ab209f-9f42-4b54-b680-0088f67d7ac5.png)
 
-Click on the `Send` button and you will get your own details that you have entered something in this format.
+Click on the `Send` button and you will get your own details that you have entered something like below.
 
 ![image](https://user-images.githubusercontent.com/78433013/166113586-713e1a76-efde-47d5-8426-372cf4a1ba7c.png)
 
-
+### Step 9
 
