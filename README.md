@@ -131,6 +131,7 @@ Once you landed on my-site, you will have to go to [Identity](https://my.realdev
 ### Step 15:
 You get to see something like the below form
 ![image](https://user-images.githubusercontent.com/78433013/172821914-024038d6-d886-4463-9e25-c4882b671261.png)
+
 Click on `Generate Chaincode`, an alert will appear, click `OK` to generate the chaincode.
 ![image](https://user-images.githubusercontent.com/78433013/172822474-30441e6a-e0a8-4f9d-9e78-1edbb0906a3c.png)
 
@@ -150,11 +151,13 @@ Otherwise,
 ### Step 16:
 Now that you have pushed your code with the chaincode. Enter your deployed service URL here.
 ![image](https://user-images.githubusercontent.com/78433013/172825385-a4e9000c-c4c2-4a43-a541-558098bad442.png)
+
 And click on `Save`.
 After that `Check` the checkbox to ensure that you have done both the steps correctly.
 Then, click on `Link Chaincode`. Woooh, now wait for few seconds or minutes to get your service verified by the Real Dev Squad service.
 Once you are verified you will get to see a verification message that your verification is completed.
 ![image](https://user-images.githubusercontent.com/78433013/172826282-140d4b22-ae5f-4f11-93cf-289b40deff73.png)
+
 Awesome, Congratulations 🥳 🎉 on becoming a user in Real Dev Squad and
 ### Welcome to Real Dev Squad 🥳 🎉
 <A Quick Intro or some catchy line about Real Dev Squad>
