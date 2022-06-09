@@ -38,7 +38,8 @@ git clone https://github.com/rohan09-raj/profile-service
 Open the cloned repository in your local IDE (IntelliJ IDEA / Eclipse).
 
 ### Step 5:
-Now that you have the code in your local. Next thing to do is: `Complete all the TODOs` present in the repository.
+Now that you have the code in your local. Next thing to do is: `Complete all the TODOs` present in the repository except one i.e. `Paste your Chaincode here`.
+We will do this remaining part in `Step-15`. 
 
 ### Step 6:
 Run the code locally using the following command:
@@ -76,11 +77,11 @@ Click on the `Send` button and you will get your own details that you have enter
 
 ![image](https://user-images.githubusercontent.com/78433013/166113586-713e1a76-efde-47d5-8426-372cf4a1ba7c.png)
 
-### Step 9
+### Step 9:
 Great 🎉 🎉, you have tested your APIs successfully, now we need to host your service, so that you can verify your Real Dev Squad account.
 You can host your service on any dynamic hosting platforms. We will be using `Heroku` here, so make sure to create an account on Heroku.
 
-### Step 10
+### Step 10:
 Cool, now that you have created your account, and logged in you will see your Heroku account dashboard something like below.
 ![image](https://user-images.githubusercontent.com/78433013/172591791-017ab48a-1f85-4b2b-9cd9-66da30f6ac1e.png)
 
@@ -89,7 +90,7 @@ Click on `New` and you will see dropdown having two options i.e. `Create New App
 
 Click on `Create New App`
 
-### Step 11
+### Step 11:
 Now, you will be directed to a new page where you have to create your new heroku app
 ![image](https://user-images.githubusercontent.com/78433013/172592488-920384c1-d144-462d-acf2-75c35cbebab5.png)
 
@@ -99,7 +100,7 @@ Enter the valid app name as per your choice, make sure you have entered a name r
 Then click on `Create App`.
 Wohoo!! you have successfully created your Heroku app, now you have to deploy the code in your local to Heroku.
 
-### Step 12
+### Step 12:
 Now you will seeing your deploy section of the Heroku app as below.
 ![image](https://user-images.githubusercontent.com/78433013/172593891-762a00e6-b78d-44f1-b560-480229903a31.png)
 
@@ -114,6 +115,54 @@ Follow the instructions as per in the given order
 After you have run this command `git push heroku master`
 Wait for few minutes or seconds to get the deployment done
 Awesome 🥳 🎉, your service is deployed and you can access your deployed service with the provided url by Heroku
+
+### Step 13:
+Now, comes the part where you will link your profile service with your Real Dev Squad account.
+Go to [Real Dev Squad](https://www.realdevsquad.com/) website and click on `Sign In With GitHub` button in the navbar as shown below.
+![image](https://user-images.githubusercontent.com/78433013/172817107-594451b4-eaeb-4997-8043-ece470218cbb.png)
+Link your GitHub account, and complete the `SignUp` steps.
+**Note** : Only for users who don't have an account on Real Dev Squad website or who haven't linked their GitHub account on Real Dev Squad website.
+ 
+### Step 14:
+Go to [My Site](https://my.realdevsquad.com/) or you can simply click the user greeting as shown below (this is after you have Signed In with your GitHub account)
+![image](https://user-images.githubusercontent.com/78433013/172818612-d5adc735-ce31-49b3-a490-004fff9670b2.png)
+
+Once you landed on my-site, you will have to go to [Identity](https://my.realdevsquad.com/identity) Tab (P.S. you can directly click on this hyperlink to get you to the desired page).
+
+### Step 15:
+You get to see something like the below form
+![image](https://user-images.githubusercontent.com/78433013/172821914-024038d6-d886-4463-9e25-c4882b671261.png)
+Click on `Generate Chaincode`, an alert will appear, click `OK` to generate the chaincode.
+![image](https://user-images.githubusercontent.com/78433013/172822474-30441e6a-e0a8-4f9d-9e78-1edbb0906a3c.png)
+
+Click on `Copy` to copy the chaincode and paste it where a `TODO` was left, mentioned in `Step-5` now when the changes are done. Check that everything looks good and all the TODOs are complete.
+Run these commands in your terminal to push the code to your deployed service through the Heroku CLI
+```git add .```
+```git commit -am "<ENTER_YOUR_COMMIT_MESSAGE>"```
+```git push heroku master ```
+If you were using the second method of `GitHub` to deploy your service
+```git add .```
+```git commit -am "<ENTER_YOUR_COMMIT_MESSAGE>"```
+If your branch name is `master` then use this
+```git push origin master ```
+Otherwise,
+```git push origin <ENTER_YOUR_BRANCH_NAME> ```
+
+### Step 16:
+Now that you have pushed your code with the chaincode. Enter your deployed service URL here.
+![image](https://user-images.githubusercontent.com/78433013/172825385-a4e9000c-c4c2-4a43-a541-558098bad442.png)
+And click on `Save`.
+After that `Check` the checkbox to ensure that you have done both the steps correctly.
+Then, click on `Link Chaincode`. Woooh, now wait for few seconds or minutes to get your service verified by the Real Dev Squad service.
+Once you are verified you will get to see a verification message that your verification is completed.
+![image](https://user-images.githubusercontent.com/78433013/172826282-140d4b22-ae5f-4f11-93cf-289b40deff73.png)
+Awesome, Congratulations 🥳 🎉 on becoming a user in Real Dev Squad and
+### Welcome to Real Dev Squad 🥳 🎉
+<A Quick Intro or some catchy line about Real Dev Squad>
+
+**Note : ** If you are unable to verify your service or their are some errors that you get encountered. Please reach out to members of Real Dev Squad from [here](https://members.realdevsquad.com/) 
+
+ 
 
 
 
