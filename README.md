@@ -2,8 +2,7 @@
 To join the community Real Dev Squad, follow the instructions below and you will get the Discord Invite Link to join the server.
 
 ## What are you building?
-Profile Service is your own service which will contain all the data of yours which will be used for building your profile in Real Dev Squad.
-It will be linked to Real Dev Squad Service which is managing the changes of your Profile Service.
+Profile Service is your own service which will be deployed and verified by you with the help of some precreated APIs and contains all the relevant data of yours, used for building your profile and getting yourself a identity in Real Dev Squad. This service will be maintained by you throughout the term of your journey in Real Dev Squad.
 
 ## Pre-requisites
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows) or [Eclipse](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2022-03/R/eclipse-inst-jre-win64.exe)
